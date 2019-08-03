@@ -21,7 +21,7 @@ function Card(props) {
                         <span onClick={toggleLike}>{liked ? '🤟' : '♡'}</span>
                     </div>
 
-                    <div id="JMap">
+                    <div>
                         <JapanMap clicked={props.clicked}/> 
                     </div>
                     

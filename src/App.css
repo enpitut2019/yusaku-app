@@ -31,15 +31,11 @@
   padding: 10px;
 }
 
-#JMap{
+#japanmap{
   display: block;
   position: absolute;
   top: 20px;
   right: 20px;
-}
-
-
-#japanmap{
   width: 180px;
   height: 180px;
 }
