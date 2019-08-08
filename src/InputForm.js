@@ -95,88 +95,86 @@ class InputForm extends React.Component {
         <Grid container>
           <Grid item xs={1}></Grid>
           <Grid item xs={10}>
-          <Paper className="InputForm" style={{padding:20}}>
-          <form>
-            <label>
-              <TextField
-                id="Year"
-                label="年数"
-                type="number"
-                style = {{width: 80}}
-                value={this.state.year}
-                onChange={this.handleChange}
-              />
-              年くらい前に
-              <TextField
-                select
-                id="Prefecture"
-                label="都道府県"
-                style = {{width: 120}}
-                value={this.state.prefecture}
-                onChange={this.handlePrefectureChange}
-              >
-              {
-                japanesePrefecture.map(option => (
-                  <MenuItem value={option}>
-                    {option}
-                  </MenuItem>
-                ))
-              }
-              </TextField>
-              で
-              <TextField
-                id="Content"
-                label="エピソード"
-                fullWidth
-                multiline="true"
-                rows="3"
-                value={this.state.content}
-                onChange={this.handleChange}
-              />
-              してた
-              <TextField
-                select
-                id="Name"
-                label="名前のイニシャル"
-                style = {{width: 160}}
-                value={this.state.name}
-                onChange={this.handleNameChange}
-              >
-              {
-                nameInitial.map(option => (
-                  <MenuItem value={option}>
-                    {option}
-                  </MenuItem>
-                ))
-              }
-              </TextField>
-              くん のこと知らない？
-            </label>
+            <Paper className="InputForm" style={{padding:20}}>
+              <form>
+                <TextField
+                  id="Year"
+                  label="年数"
+                  type="number"
+                  style = {{width: 80}}
+                  value={this.state.year}
+                  onChange={this.handleChange}
+                />
+                年くらい前に
+                <TextField
+                  select
+                  id="Prefecture"
+                  label="都道府県"
+                  style = {{width: 120}}
+                  value={this.state.prefecture}
+                  onChange={this.handlePrefectureChange}
+                >
+                {
+                  japanesePrefecture.map(option => (
+                    <MenuItem value={option}>
+                      {option}
+                    </MenuItem>
+                  ))
+                }
+                </TextField>
+                で
+                <TextField
+                  id="Content"
+                  label="エピソード"
+                  fullWidth
+                  multiline="true"
+                  rows="3"
+                  value={this.state.content}
+                  onChange={this.handleChange}
+                />
+                してた
+                <TextField
+                  select
+                  id="Name"
+                  label="名前のイニシャル"
+                  style = {{width: 160}}
+                  value={this.state.name}
+                  onChange={this.handleNameChange}
+                >
+                {
+                  nameInitial.map(option => (
+                    <MenuItem value={option}>
+                      {option}
+                    </MenuItem>
+                  ))
+                }
+                </TextField>
+                くん のこと知らない？
 
-            <div>
-            <Button
-              id="Submit"
-              type="submit"
-              variant="contained"
-              color="primary"
-              onClick={this.handleSubmit}
-            >
-              <SendIcon></SendIcon>　送信
-            </Button>
-            </div>
-          </form>
+                <div>
+                  <Button
+                    id="Submit"
+                    type="submit"
+                    variant="contained"
+                    color="primary"
+                    onClick={this.handleSubmit}
+                  >
+                    <SendIcon></SendIcon>　送信
+                  </Button>
+                </div>
+              </form>
 
-          </Paper>
+            </Paper>
+          </Grid>
+          <Grid item xs={1}></Grid>
         </Grid>
-        <Grid item xs={1}></Grid>
-      </Grid>
 
-      <Grid container>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={4}>
+        <Grid container>
+          <Grid item xs={4}></Grid>
+          <Grid item xs={4}>
+          </Grid>
+          <Grid item xs={4}></Grid>
         </Grid>
-        <Grid item xs={4}></Grid>
-      </Grid>
       </div>
     );
   }
