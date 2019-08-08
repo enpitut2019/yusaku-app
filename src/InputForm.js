@@ -97,7 +97,6 @@ class InputForm extends React.Component {
           <Grid item xs={10}>
           <Paper className="InputForm" style={{padding:20}}>
           <form>
-            <label>
               <TextField
                 id="Year"
                 label="年数"
@@ -151,7 +150,6 @@ class InputForm extends React.Component {
               }
               </TextField>
               くん のこと知らない？
-            </label>
 
             <div>
             <Button
